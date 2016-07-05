@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuBehaviour : MonoBehaviour {
 
 	public void LoadLevel(string levelname){
+		Time.timeScale = 1;
 		SceneManager.LoadScene (levelname);
 	}
 

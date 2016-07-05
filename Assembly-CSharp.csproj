@@ -50,6 +50,7 @@
      <Compile Include="Assets\Assets\Scripts\LaserBehaviour.cs" />
      <Compile Include="Assets\Assets\Scripts\MainMenuBehaviour.cs" />
      <Compile Include="Assets\Assets\Scripts\MoveTowardsPlayer.cs" />
+     <Compile Include="Assets\Assets\Scripts\PauseMenuBehaviour.cs" />
      <Compile Include="Assets\Assets\Scripts\PlayerBehaviour.cs" />
      <None Include="Assets\Assets\Fonts\SIL Open Font License.txt" />
  <Reference Include="UnityEngine.Networking">

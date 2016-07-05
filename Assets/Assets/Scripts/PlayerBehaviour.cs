@@ -25,9 +25,11 @@ public class PlayerBehaviour : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		CheckFire ();
-		Rotation ();
-		Movement ();
+		if (!PauseMenuBehaviour.isPaused) {
+			CheckFire ();
+			Rotation ();
+			Movement ();
+		}
 	}
 
 	void CheckFire(){
