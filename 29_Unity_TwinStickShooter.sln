@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{417043AC-6435-D16B-1B4B-CA0844D22BBA}") = "29_Unity_TwinStickShooter", "Assembly-CSharp.csproj", "{57130DD5-08F2-E802-7A33-E01855715BE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57130DD5-08F2-E802-7A33-E01855715BE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57130DD5-08F2-E802-7A33-E01855715BE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57130DD5-08F2-E802-7A33-E01855715BE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57130DD5-08F2-E802-7A33-E01855715BE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
