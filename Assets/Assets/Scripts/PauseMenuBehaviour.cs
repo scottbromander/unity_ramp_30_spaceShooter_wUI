@@ -5,6 +5,7 @@ using System.Collections;
 public class PauseMenuBehaviour : MainMenuBehaviour {
 	public static bool isPaused;
 	public GameObject pauseMenu;
+	public GameObject optionsMenu;
 
 
 	// Use this for initialization
