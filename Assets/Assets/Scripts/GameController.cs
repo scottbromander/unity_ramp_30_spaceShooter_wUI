@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 public class GameController : MonoBehaviour {
 	public Transform enemy;
+	public GameObject gameOverMenu;
 
 	[Header("Wave Properties")]
 	public float timeBeforeSpawning = 1.5f;
@@ -23,7 +24,6 @@ public class GameController : MonoBehaviour {
 	public Text scoreText;
 	public Text waveText;
 	public Text livesText;
-	public Text gameOverText;
 
 	public int enemiesPerWave = 10;
 	private int currentNumberOfEnemies = 0;
@@ -31,7 +31,7 @@ public class GameController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		gameOverText.text = "";
+		gameOverMenu.SetActive (false);
 		StartCoroutine(SpawnEnemies());
 		playerLives = playerStartingLives;
 		updateLivesText (playerLives);
@@ -100,7 +100,9 @@ public class GameController : MonoBehaviour {
 		scoreText.text = "";
 		waveText.text = "";
 		livesText.text = "";
-		gameOverText.text = "GAME OVER\n" + "SCORE: " + score;
+
+		gameOverMenu.SetActive (true);
+		gameOverMenu.transform.FindChild("Game Over Text").GetComponent<UnityEngine.UI.Text> ().text = "GAME OVER - SCORE: " + score;
 	}
 	
 	// Update is called once per frame
