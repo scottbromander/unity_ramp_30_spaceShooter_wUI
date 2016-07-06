@@ -69,7 +69,6 @@ public class GameController : MonoBehaviour {
 	}
 
 	public void PlayerHit(){
-		print ("Player hit!");
 		playerLives--;
 		updateLivesText (playerLives);
 
